@@ -1,86 +1,145 @@
+---
+title: "BetKeep: a private app for quitting gambling, on iPhone"
+description: "BetKeep is a free iPhone app for quitting gambling: days won, money kept, a plan for the nights the games are on. No account, no ads, no data collected."
+image: /icon.png
+lang: en
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BetKeep — The companion to your blocker</title>
-<style>
-  :root { --bg:#0c1410; --card:#142019; --ink:#eaf3ee; --muted:#9fb3a8; --accent:#34b878; --accent2:#1a8050; }
-  * { box-sizing:border-box; }
-  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-         background:var(--bg); color:var(--ink); line-height:1.6; }
-  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
-  header { text-align:center; padding:40px 0 16px; }
-  .logo { width:88px; height:88px; border-radius:22px; display:inline-flex; align-items:center; justify-content:center;
-          background:linear-gradient(135deg,var(--accent2),var(--accent)); font-size:48px; }
-  h1 { margin:16px 0 4px; font-size:32px; }
-  .tag { color:var(--muted); margin:0 0 8px; }
-  h2 { margin-top:40px; font-size:22px; border-bottom:1px solid #24332b; padding-bottom:8px; }
-  a { color:var(--accent); }
-  .card { background:var(--card); border:1px solid #20302a; border-radius:16px; padding:20px 22px; margin-top:18px; }
-  .muted { color:var(--muted); font-size:14px; }
-  ul { padding-left:20px; }
-  code { background:#0f1a15; padding:2px 6px; border-radius:6px; }
-  footer { text-align:center; color:var(--muted); font-size:13px; margin-top:48px; }
-</style>
+<title>BetKeep: a private app for quitting gambling, on iPhone</title>
+<meta name="apple-itunes-app" content="app-id=6811402448">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+{% seo title=false %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "BetKeep",
+  "alternateName": "BetKeep: Quit Gambling",
+  "description": "A private quit-gambling companion for iPhone, built to sit beside your blocker: days won, money kept, a week that knows when the games are, and a five-step SOS. No account, no ads, no data collected.",
+  "url": "https://nickminieri.github.io/betkeep/",
+  "installUrl": "https://apps.apple.com/app/id6811402448",
+  "image": "https://nickminieri.github.io/betkeep/icon.png",
+  "operatingSystem": "iOS 17.0 or later",
+  "applicationCategory": "HealthApplication",
+  "inLanguage": [
+    "en",
+    "de"
+  ],
+  "fileSize": "8.3 MB",
+  "contentRating": "12+",
+  "datePublished": "2026-09-15",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free to download and use. Optional BetKeep Plus: $9.99 once."
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Nick Minieri"
+  },
+  "sameAs": "https://apps.apple.com/app/id6811402448"
+}
+</script>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="logo">🏠</div>
-    <h1>BetKeep</h1>
-    <p class="tag">Quit gambling. The companion to your blocker.</p>
-  </header>
-
-  <p>BetKeep helps you quit sports betting, prediction markets, online casino, poker, lottery, and trading, kept as an honest ledger. It counts the days since your last bet, keeps the money you would have lost, walks you through a five-step SOS when the urge hits, knows the nights the apps open on their own, and gives you a line to write every night to close the day. It is not a blocker. Everything stays on your iPhone: no account, no ads, no subscription.</p>
-
-  <h2 id="about">About BetKeep</h2>
-  <div class="card">
-<p><strong>What it is:</strong> A quit-gambling companion built to sit beside your blocker: days won and money kept as real net loss, a week that knows when the games are, a line you write every night, a five-step SOS with your region's helpline, urge logging with stake and chasing, and a house drawn in the margin that grows with your days and never resets.</p>
-<p><strong>Who it is for:</strong> Anyone quitting sports betting, prediction markets, online casino, poker, lottery, or trading.</p>
-<p><strong>Price:</strong> Free. One optional one-time Plus purchase. No subscription, no ads.</p>
-<p><strong>Privacy:</strong> No account, no analytics, no data collected. Everything stays on your iPhone. Works offline.</p>
-<p><strong>Platform and languages:</strong> iPhone (iOS 17 or later). English and German.</p>
-<p><strong>Made by:</strong> Nick Minieri, one person in the United States. <a href="https://apps.apple.com/app/id6811402448">App Store listing</a>.</p>
+<div class="sky">
+  <div class="hero">
+    <div>
+      <a class="brand" href="./"><img src="icon.png" alt="BetKeep app icon" width="44" height="44">BetKeep</a>
+      <h1>Quit gambling.<br>Keep the money.</h1>
+      <p class="sub">Tonight's page in an honest book. The house grows by days won and never resets.</p>
+      <a class="badge" href="https://apps.apple.com/app/id6811402448"><img src="img/app-store-badge.svg" alt="Download on the App Store" width="162" height="54"></a>
+      <p class="small">Free. No account. No ads.</p>
+    </div>
+    <img class="phone" src="img/01_today.webp" alt="BetKeep on day 60: the house, tonight's window, your plan and the line to write" width="720" height="1472">
   </div>
+</div>
+
+<main>
+  <p class="lede" id="about">BetKeep is an iPhone app for quitting gambling: sports betting, prediction markets, online casino, poker, lottery, or trading. It is not a blocker. It sits beside the one you use.</p>
+  <p>It counts the days since your last bet and the money you kept, and it knows the nights the games are on. When the urge hits there are five steps to sit through it, with your region's helpline. Each night you write one line to close the day. Everything stays on your iPhone.</p>
+</main>
+
+<div class="three">
+  <figure>
+    <img src="img/02_week.webp" alt="This week: the nights the games are on, each with your plan" width="720" height="1472" loading="lazy">
+    <h3 class="big">It knows the nights.</h3>
+    <p>Your plan is ready before kickoff.</p>
+  </figure>
+  <figure>
+    <img src="img/03_ledger.webp" alt="The ledger: money kept, a goal and what is owed" width="720" height="1472" loading="lazy">
+    <h3 class="big">See the money you kept</h3>
+    <p>Kept, paid back, and the day the debt clears.</p>
+  </figure>
+  <figure>
+    <img src="img/05_sos.webp" alt="Sit with me: the urge passes, with a 15-minute wave timer" width="720" height="1472" loading="lazy">
+    <h3 class="big">When the urge hits</h3>
+    <p>Sit with me, then log the bet you didn't place.</p>
+  </figure>
+</div>
+
+<main>
+  <h2 id="facts">The details</h2>
+  <dl class="facts">
+    <dt>Price</dt><dd>Free. Plus is optional: $9.99 once (US price). No subscription.</dd>
+    <dt>Ads</dt><dd>None</dd>
+    <dt>Account</dt><dd>None. No sign-up, no server.</dd>
+    <dt>Privacy label</dt><dd>Data Not Collected</dd>
+    <dt>Works offline</dt><dd>Yes</dd>
+    <dt>Needs</dt><dd>An iPhone with iOS 17.0 or later.</dd>
+    <dt>Size</dt><dd>8.3 MB</dd>
+    <dt>Languages</dt><dd>English, German</dd>
+    <dt>Category</dt><dd>Health &amp; Fitness</dd>
+    <dt>Age rating</dt><dd>12+</dd>
+    <dt>First released</dt><dd>September 15, 2026</dd>
+    <dt>On the App Store as</dt><dd><a href="https://apps.apple.com/app/id6811402448">BetKeep: Quit Gambling</a></dd>
+    <dt>Made by</dt><dd>Nick Minieri, one person in the United States</dd>
+  </dl>
+  <p class="soft" style="margin-top:12px">Checked against the App Store listing on November 10, 2026.</p>
 
   <h2 id="support">Support</h2>
-  <div class="card">
-    <p>Need help, found a bug, or have a feature request? I'd love to hear from you.</p>
-    <p>Email: <a href="mailto:minieriapps+betkeep@gmail.com">minieriapps+betkeep@gmail.com</a></p>
-    <p class="muted">I'm a solo developer and read every message. Please allow a couple of days for a reply.</p>
-  </div>
-  <div class="card">
-    <strong>If you're in crisis</strong>
+<p>Found a bug, or want something added? Email me at <a href="mailto:minieriapps+betkeep@gmail.com">minieriapps+betkeep@gmail.com</a>. I make BetKeep on my own and read every message. Give me a couple of days to reply.</p>
+<h3>If you're in crisis</h3>
     <ul>
-      <li><strong>988 Suicide &amp; Crisis Lifeline</strong> — call or text 988 (US and Canada)</li>
-      <li><strong>National Problem Gambling Helpline</strong> — 1-800-GAMBLER, or 1-800-MY-RESET (call, text or chat)</li>
-      <li><strong>UK</strong> — GamCare National Gambling Helpline 0808 8020 133 (24/7) · Samaritans 116 123</li>
-      <li><strong>Germany</strong> — BIÖG Glücksspiel-Beratung 0800 1 37 27 00 · Telefonseelsorge 0800 111 0 111</li>
-      <li><strong>Australia</strong> — Gambling Help Online 1800 858 858 (24/7) · Lifeline 13 11 14</li>
-      <li><strong>Canada</strong> — ConnexOntario 1-866-531-2600</li>
+      <li><strong>988 Suicide &amp; Crisis Lifeline</strong>: call or text 988 (US and Canada)</li>
+      <li><strong>National Problem Gambling Helpline</strong>: 1-800-GAMBLER, or 1-800-MY-RESET (call, text or chat)</li>
+      <li><strong>UK</strong>: GamCare National Gambling Helpline 0808 8020 133 (24/7) · Samaritans 116 123</li>
+      <li><strong>Germany</strong>: BIÖG Glücksspiel-Beratung 0800 1 37 27 00 · Telefonseelsorge 0800 111 0 111</li>
+      <li><strong>Australia</strong>: Gambling Help Online 1800 858 858 (24/7) · Lifeline 13 11 14</li>
+      <li><strong>Canada</strong>: ConnexOntario 1-866-531-2600</li>
     </ul>
-    <p class="muted">BetKeep is a personal companion, not a medical or crisis service.</p>
-  </div>
+    <p class="soft">BetKeep is a personal companion, not a medical or crisis service.</p>
 
   <h2 id="privacy">Privacy Policy</h2>
-  <div class="card">
-    <p class="muted">Last updated: October 1, 2026</p>
-    <p><strong>BetKeep does not collect, transmit, sell, or share any of your data.</strong> There is no account, no login, and no server.</p>
-    <p><strong>What we collect:</strong> Nothing. The app has no analytics, no ads, no third-party SDKs, and makes no network requests. Because there is no backend, your data physically cannot reach us.</p>
-    <p><strong>Where your data lives:</strong> Only on your iPhone, in Apple's on-device database. Delete the app and the data goes with it. Use the built-in backup, or the CSV/PDF export, to keep your own copy.</p>
-    <p><strong>Notifications:</strong> If enabled, reminders are scheduled locally on your device and are not sent through any server.</p>
-    <p><strong>Face ID and the app lock:</strong> BetKeep does not collect, access, store, or share face data. The optional app lock (in BetKeep's Settings, off by default) uses Apple's LocalAuthentication framework: iOS performs the Face ID, Touch ID, or passcode check itself and tells BetKeep only whether it succeeded. Your face data stays in your device's Secure Enclave under Apple's control; BetKeep never receives it, so there is nothing for us to use, retain, disclose, or share with any third party. To withdraw permission, turn the lock off in BetKeep's Settings, or switch off Face ID for BetKeep in the iOS Settings app (Face ID &amp; Passcode › Other Apps). Because BetKeep holds no face data there is nothing for it to delete; your enrolled face is managed, and can be removed, only in iOS Settings › Face ID &amp; Passcode.</p>
-    <p><strong>Get Help and block setup links:</strong> The in-app helplines, self-exclusion registers, bank guides, and blocker apps are third-party services listed for convenience; calling or opening them connects you directly to them, not through BetKeep. Which of them you have set up is recorded only on your device.</p>
-    <p><strong>In-app purchase:</strong> BetKeep Plus is an optional one-time purchase handled entirely by Apple's App Store. BetKeep never sees your payment details; Apple's own privacy policy applies to the transaction.</p>
-    <p><strong>Children:</strong> BetKeep does not knowingly collect information from anyone, including children.</p>
-    <p class="muted">Deutsch: <a href="datenschutz.html">Datenschutzerklärung</a></p>
-    <p><strong>Contact:</strong> <a href="mailto:minieriapps+betkeep@gmail.com">minieriapps+betkeep@gmail.com</a></p>
-  </div>
-
-  <p class="muted" style="margin-top:24px">BetKeep is a personal companion. It is not a medical device, does not provide medical advice, diagnosis, or treatment, and is not a substitute for professional help. It does not offer wagering, odds, or links to gambling operators.</p>
+<p class="soft">Last updated: October 1, 2026</p>
+    <p>BetKeep does not collect, transmit, sell, or share any of your data. There is no account, no login, and no server.</p>
+    <h3>What we collect</h3>
+<p>Nothing. The app has no analytics, no ads, no third-party SDKs, and makes no network requests. Because there is no backend, your data physically cannot reach us.</p>
+    <h3>Where your data lives</h3>
+<p>Only on your iPhone, in Apple's on-device database. Delete the app and the data goes with it. Use the built-in backup, or the CSV/PDF export, to keep your own copy.</p>
+    <h3>Notifications</h3>
+<p>If enabled, reminders are scheduled locally on your device and are not sent through any server.</p>
+    <h3>Face ID and the app lock</h3>
+<p>BetKeep does not collect, access, store, or share face data. The optional app lock (in BetKeep's Settings, off by default) uses Apple's LocalAuthentication framework: iOS performs the Face ID, Touch ID, or passcode check itself and tells BetKeep only whether it succeeded. Your face data stays in your device's Secure Enclave under Apple's control; BetKeep never receives it, so there is nothing for us to use, retain, disclose, or share with any third party. To withdraw permission, turn the lock off in BetKeep's Settings, or switch off Face ID for BetKeep in the iOS Settings app (Face ID &amp; Passcode › Other Apps). Because BetKeep holds no face data there is nothing for it to delete; your enrolled face is managed, and can be removed, only in iOS Settings › Face ID &amp; Passcode.</p>
+    <h3>Get Help and block setup links</h3>
+<p>The in-app helplines, self-exclusion registers, bank guides, and blocker apps are third-party services listed for convenience; calling or opening them connects you directly to them, not through BetKeep. Which of them you have set up is recorded only on your device.</p>
+    <h3>In-app purchase</h3>
+<p>BetKeep Plus is an optional one-time purchase handled entirely by Apple's App Store. BetKeep never sees your payment details; Apple's own privacy policy applies to the transaction.</p>
+    <h3>Children</h3>
+<p>BetKeep does not knowingly collect information from anyone, including children.</p>
+    <p class="soft">Deutsch: <a href="datenschutz.html">Datenschutzerklärung</a></p>
+    <h3>Contact</h3>
+<p><a href="mailto:minieriapps+betkeep@gmail.com">minieriapps+betkeep@gmail.com</a></p>
+  <p class="soft">BetKeep is a personal companion. It is not a medical device, does not provide medical advice, diagnosis, or treatment, and is not a substitute for professional help. It does not offer wagering, odds, or links to gambling operators.</p>
 
   <footer>© 2026 Nick Minieri · BetKeep</footer>
-</div>
+</main>
 </body>
 </html>
