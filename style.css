@@ -1,23 +1,23 @@
-:root { --ink:#17272d; --soft:#5b6268; --rule:#e4e6e8; --leaf:#a3432c; --heroink:#fff; }
+:root { --ink:#262b3a; --soft:#5b6268; --rule:#e4e6e8; --leaf:#bd4a29; --heroink:#262b3a; }
 * { box-sizing:border-box; }
 html { -webkit-text-size-adjust:100%; }
 body { margin:0; background:#fff; color:var(--ink); font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
 a { color:var(--leaf); }
 img { max-width:100%; height:auto; display:block; }
-h1,h2,h3.big { font-family:ui-serif,"New York",Georgia,"Times New Roman",serif; font-weight:600; letter-spacing:-0.01em; line-height:1.1; margin:0; }
+h1,h2,h3.big { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; font-weight:700; letter-spacing:-0.01em; line-height:1.1; margin:0; }
 
 /* The ground of the App Store panels */
-.sky { position:relative; overflow:hidden; color:var(--heroink); background:linear-gradient(180deg,#1d333b,#1b3038,#192c34,#172930,#15262d,#122229); }
-.sky::before { content:""; position:absolute; inset:0; background:linear-gradient(180deg,#1d333b,#1b3038,#192c34,#172930,#15262d,#122229);
+.sky { position:relative; overflow:hidden; color:var(--heroink); background:linear-gradient(180deg,#baccf1,#c5ceea,#d1d0e2,#ddd2d9,#ead5ce,#f7d8c4); }
+.sky::before { content:""; position:absolute; inset:0; background:linear-gradient(180deg,#baccf1,#c5ceea,#d1d0e2,#ddd2d9,#ead5ce,#f7d8c4);
   -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 100%); mask-image:linear-gradient(90deg,transparent 0%,#000 100%); }
 .hero { position:relative; max-width:980px; margin:0 auto; padding:28px 24px 0; display:grid; grid-template-columns:1fr 340px; gap:40px; align-items:center; }
 .brand { display:flex; align-items:center; gap:12px; font-weight:600; font-size:19px; color:inherit; text-decoration:none; }
-.brand img { width:44px; height:44px; border-radius:22.5%; box-shadow:0 2px 8px rgba(0,0,0,.25); }
+.brand img { width:44px; height:44px; border-radius:22.5%; box-shadow:0 2px 8px rgba(60,40,60,.22); }
 .hero h1 { font-size:58px; margin-top:56px; text-wrap:balance; }
 .hero .sub { font-size:21px; margin:16px 0 28px; max-width:26em; }
 .badge img { height:54px; width:auto; }
 .hero .small { font-size:15px; margin:14px 0 48px; }
-.hero .phone { align-self:end; margin-bottom:-90px; filter:drop-shadow(0 18px 30px rgba(0,0,0,.35)); }
+.hero .phone { align-self:end; margin-bottom:-90px; filter:drop-shadow(0 18px 30px rgba(60,40,60,.30)); }
 
 main { max-width:720px; margin:0 auto; padding:0 24px 72px; }
 .lede { font-size:21px; line-height:1.5; margin:64px 0 0; }
